@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">LookTheWorld</string>
+    
+    <!-- Main Activity -->
+    <string name="news">新闻</string>
+    <string name="technology">科技</string>
+    <string name="games">游戏</string>
+    <string name="settings">设置</string>
+    
+    <!-- News Activity -->
+    <string name="scroll_news">即时新闻</string>
+    <string name="import_news">要闻导读</string>
+    
+    <!-- IT Activity -->
+    <string name="it_home">IT之家</string>
+    
+    <!-- Games Activity -->
+    <string name="genshin_impact">原神</string>
+    <string name="honkai_star_railway">崩坏：星穹铁道</string>
+    <string name="zzz">绝区零</string>
+    
+    <!-- Genshin Impact Activities -->
+    <string name="notice">公告</string>
+    <string name="events">活动</string>
+    <string name="info">资讯</string>
+    
+    <!-- Settings Activity -->
+    <string name="about">关于</string>
+    
+    <!-- Common -->
+    <string name="loading">加载中...</string>
+    <string name="refresh">刷新</string>
+    <string name="network_error">网络错误，请检查连接</string>
+    <string name="under_construction">未完工</string>
+</resources>

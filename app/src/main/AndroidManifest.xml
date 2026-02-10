@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 传统存储权限，适用于Android 9及以下 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    
+    <!-- Android 11+管理外部存储权限 -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" 
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LookTheWorld">
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".News.NewsActivity" />
+        <activity android:name=".News.ScrollNewsActivity" />
+        <activity android:name=".News.ImportNewsActivity" />
+        <activity android:name=".IT.ITActivity" />
+        <activity android:name=".Games.GamesActivity" />
+        <activity android:name=".Games.GenshinImpact.GenshinImpactActivity" />
+        <activity android:name=".Games.GenshinImpact.GenshinImpactNotice" />
+        <activity android:name=".Games.GenshinImpact.GenshinImpactEvents" />
+        <activity android:name=".Games.GenshinImpact.GenshinImpactInfo" />
+        <activity android:name=".Games.HonkaiStarRailway.HonkaiStarRailwayActivity" />
+        <activity android:name=".Games.ZZZ.ZZZActivity" />
+        <activity android:name=".Settings.SettingsActivity" />
+        <activity android:name=".Settings.AboutActivity" />
+        <activity android:name=".Details.DetailsActivity" />
+        <activity android:name=".ImageViewer.ImageViewerActivity" />
+        
+    </application>
+
+</manifest>

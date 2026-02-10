@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <include
+        android:id="@+id/customToolbar"
+        layout="@layout/custom_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Article Title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textViewDetailDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2026-02-10"
+                android:textSize="14sp"
+                android:textColor="@color/light_gray"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/textViewDetailAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:textSize="14sp"
+                android:textColor="@color/light_gray"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageViewDetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Article content..."
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:lineSpacingExtra="4dp" />
+
+            <Button
+                android:id="@+id/buttonOpenLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打开原文链接"
+                android:textColor="@color/white"
+                android:background="@color/button_gray"
+                android:layout_marginTop="24dp"
+                style="?android:attr/borderlessButtonStyle" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
