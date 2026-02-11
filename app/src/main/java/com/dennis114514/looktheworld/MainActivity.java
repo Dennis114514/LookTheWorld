@@ -16,7 +16,6 @@ import com.dennis114514.looktheworld.Games.GamesActivity;
 import com.dennis114514.looktheworld.IT.ITActivity;
 import com.dennis114514.looktheworld.News.NewsActivity;
 import com.dennis114514.looktheworld.Settings.SettingsActivity;
-import com.dennis114514.looktheworld.Utils.CustomToolbarHelper;
 
 public class MainActivity extends AppCompatActivity {
     private boolean doubleBackToExitPressedOnce = false;

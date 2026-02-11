@@ -19,10 +19,6 @@ import com.dennis114514.looktheworld.Model.RSSItem;
 import com.dennis114514.looktheworld.R;
 import com.dennis114514.looktheworld.Utils.NetworkUtils;
 import com.dennis114514.looktheworld.Utils.RSSParser;
-
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
 import java.util.List;
 
 public abstract class BaseRSSActivity extends AppCompatActivity {

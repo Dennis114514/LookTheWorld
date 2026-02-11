@@ -1,7 +1,5 @@
 package com.dennis114514.looktheworld.IT;
 
-import android.os.Bundle;
-
 import com.dennis114514.looktheworld.News.BaseRSSActivity;
 import com.dennis114514.looktheworld.R;
 
