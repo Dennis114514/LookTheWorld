@@ -32,7 +32,7 @@
     <string name="refresh">重新看到真实的星空</string>
     <string name="network_error">数据迷失在了虚假之天中</string>
     <string name="under_construction">未完工</string>
-    <string name="VersionCode">版本: 0.1.0</string>
+    <string name="VersionCode">版本:1.0.0(1)</string>
     <string name="appDescribe1">“看看世界吧。它永远在那里，无声无息。”\n• 原理\n通过自己手搓（划掉）AI做的的一个简单的RSS订阅解析器和图片查看器，实现在手表上查看新闻，关注游戏动态</string>
     <string name="Resources">•订阅源</string>
     <string name="resources">•科技：https://www.ithome.com/rss/\n
