@@ -9,44 +9,50 @@
         android:id="@+id/customToolbar"
         layout="@layout/custom_toolbar" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:fillViewport="true">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/news"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:layout_marginBottom="32dp"
-            android:layout_marginTop="16dp" />
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <Button
-            android:id="@+id/buttonScrollNews"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="@string/scroll_news"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:background="@color/button_gray"
-            android:layout_marginBottom="16dp"
-            style="?android:attr/borderlessButtonStyle" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/news"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="16dp" />
+            <Button
+                android:id="@+id/buttonScrollNews"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/scroll_news"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/button_gray"
+                android:layout_marginBottom="16dp"
+                style="?android:attr/borderlessButtonStyle" />
 
-        <Button
-            android:id="@+id/buttonImportNews"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="@string/import_news"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:background="@color/button_gray"
-            style="?android:attr/borderlessButtonStyle" />
+            <Button
+                android:id="@+id/buttonImportNews"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/import_news"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/button_gray"
+                style="?android:attr/borderlessButtonStyle" />
 
-    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

@@ -1,55 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customToolbar"
     android:layout_width="match_parent"
-    android:layout_height="48dp"
-    android:background="@color/toolbar_gray">
+    android:layout_height="wrap_content"
+    android:background="@color/toolbar_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="4dp">
 
+    <!-- 返回按钮 -->
     <ImageButton
         android:id="@+id/buttonBack"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:background="?android:attr/selectableItemBackground"
+        android:background="@null"
+        android:padding="8dp"
         android:src="@drawable/ic_arrow_back"
         app:tint="@color/white"
-        android:contentDescription="返回" />
+        android:contentDescription="返回"
+        android:clickable="false" />
 
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toEndOf="@id/buttonBack"
-        android:layout_toRightOf="@id/buttonBack"
-        android:layout_toStartOf="@id/buttonAction"
-        android:layout_toLeftOf="@id/buttonAction"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="标题"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:maxLines="1"
-        android:ellipsize="end" />
-
+    <!-- Action按钮 -->
     <ImageButton
         android:id="@+id/buttonAction"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/timeText"
+        android:layout_toLeftOf="@+id/timeText"
         android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:tint="@color/white"
+        android:contentDescription="操作" />
+
+    <!-- 动态页面标题 -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/buttonBack"
+        android:layout_toRightOf="@+id/buttonBack"
+        android:layout_toStartOf="@id/buttonAction"
+        android:layout_toLeftOf="@id/buttonAction"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="页面标题"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp" />
+
+    <!-- 时间显示 -->
+    <TextClock
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:src="@android:drawable/ic_menu_save"
-        app:tint="@color/white"
-        android:visibility="gone"
-        android:contentDescription="操作按钮" />
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:format12Hour="HH:mm"
+        android:format24Hour="HH:mm"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="NewApi" />
 
 </RelativeLayout>

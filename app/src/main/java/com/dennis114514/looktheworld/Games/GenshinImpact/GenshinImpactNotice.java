@@ -2,14 +2,14 @@ package com.dennis114514.looktheworld.Games.GenshinImpact;
 
 import android.os.Bundle;
 
-import com.dennis114514.looktheworld.News.BaseRSSActivity;
+import com.dennis114514.looktheworld.Games.BaseMultiSourceRSSActivity;
 import com.dennis114514.looktheworld.R;
 import com.dennis114514.looktheworld.Utils.CustomToolbarHelper;
 
-public class GenshinImpactNotice extends BaseRSSActivity {
+public class GenshinImpactNotice extends BaseMultiSourceRSSActivity {
     @Override
-    protected String getRSSUrl() {
-        return "https://rsshub.rssforever.com/hoyolab/news/zh-cn/2/1";
+    protected String getRSSPath() {
+        return "hoyolab/news/zh-cn/2/1";
     }
 
     @Override

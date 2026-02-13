@@ -26,9 +26,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 设置自定义顶栏（主页不需要返回按钮）
-        CustomToolbarHelper.setupToolbarWithoutBack(this, getString(R.string.app_name));
-
         Button buttonNews = findViewById(R.id.buttonNews);
         Button buttonTechnology = findViewById(R.id.buttonTechnology);
         Button buttonGames = findViewById(R.id.buttonGames);

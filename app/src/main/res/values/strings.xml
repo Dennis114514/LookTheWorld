@@ -35,5 +35,15 @@
     <string name="VersionCode">版本: 0.1.0</string>
     <string name="appDescribe1">“看看世界吧。它永远在那里，无声无息。”\n• 原理\n通过自己手搓（划掉）AI做的的一个简单的RSS订阅解析器和图片查看器，实现在手表上查看新闻，关注游戏动态</string>
     <string name="Resources">•订阅源</string>
-    <string name="resources">•科技：https://www.ithome.com/rss/\n•新闻：https://www.chinanews.com.cn/rss/scroll-news.xml\nhttps://www.chinanews.com.cn/rss/importnews.xml\n• 游戏\n原神：https://rsshub.rssforever.com/hoyolab/news/zh-cn/2/1\nhttps://rsshub.rssforever.com/hoyolab/news/zh-cn/2/2\nhttps://rsshub.rssforever.com/hoyolab/news/zh-cn/2/3</string>
+    <string name="resources">•科技：https://www.ithome.com/rss/\n
+•新闻：https://www.chinanews.com.cn/rss/scroll-news.xml\n
+https://www.chinanews.com.cn/rss/importnews.xml\n
+• 游戏
+原神：https://rsshub.app/hoyolab/news/zh-cn/2/1\n
+https://rsshub.app/hoyolab/news/zh-cn/2/2\n
+https://rsshub.app/hoyolab/news/zh-cn/2/3\n声明：使用了多个RSSHub的镜像站以增强稳定性</string>
+    
+    <!-- Multi-source RSS -->
+    <string name="trying_source">正在尝试源</string>
+    <string name="all_sources_failed">所有RSS源都获取失败</string>
 </resources>

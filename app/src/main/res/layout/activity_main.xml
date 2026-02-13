@@ -6,81 +6,84 @@
     android:orientation="vertical"
     android:background="@color/black">
 
-    <include
-        android:id="@+id/customToolbar"
-        layout="@layout/custom_toolbar" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:fillViewport="true">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:layout_marginBottom="32dp"
-            android:layout_marginTop="16dp" />
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <Button
-            android:id="@+id/buttonNews"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="@string/news"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:background="@color/button_gray"
-            android:layout_marginBottom="16dp"
-            style="?android:attr/borderlessButtonStyle" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="16dp" />
 
-        <Button
-            android:id="@+id/buttonTechnology"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="@string/technology"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:background="@color/button_gray"
-            android:layout_marginBottom="16dp"
-            style="?android:attr/borderlessButtonStyle" />
+            <Button
+                android:id="@+id/buttonNews"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/news"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/button_gray"
+                android:layout_marginBottom="16dp"
+                style="?android:attr/borderlessButtonStyle" />
 
-        <Button
-            android:id="@+id/buttonGames"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="@string/games"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:background="@color/button_gray"
-            android:layout_marginBottom="16dp"
-            style="?android:attr/borderlessButtonStyle" />
+            <Button
+                android:id="@+id/buttonTechnology"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/technology"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/button_gray"
+                android:layout_marginBottom="16dp"
+                style="?android:attr/borderlessButtonStyle" />
 
-        <Button
-            android:id="@+id/buttonSettings"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="@string/settings"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:background="@color/button_gray"
-            android:layout_marginBottom="32dp"
-            style="?android:attr/borderlessButtonStyle" />
+            <Button
+                android:id="@+id/buttonGames"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/games"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/button_gray"
+                android:layout_marginBottom="16dp"
+                style="?android:attr/borderlessButtonStyle" />
 
-        <Button
-            android:id="@+id/buttonExit"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="退出应用"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:background="@color/button_gray"
-            style="?android:attr/borderlessButtonStyle" />
+            <Button
+                android:id="@+id/buttonSettings"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/settings"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/button_gray"
+                android:layout_marginBottom="16dp"
+                style="?android:attr/borderlessButtonStyle" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/buttonExit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="退出应用"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@color/button_gray"
+                style="?android:attr/borderlessButtonStyle" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
